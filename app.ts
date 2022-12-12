@@ -1,7 +1,7 @@
 
 
-const msg:string ='hola mundo' // el mensaje de error aca es porque tanto en app.ts como en app.js el sistema piensa que van a colisionar los nombre en el navegador
-console.log(msg)
+//const msg:string ='hola mundo' // el mensaje de error aca es porque tanto en app.ts como en app.js el sistema piensa que van a colisionar los nombre en el navegador
+//console.log(msg) 
 
 
 /**si dejamos el cursor sobre "msg vemos que nos muestra" const msg: "hola mundo" esos dos puntos me dicen que 
@@ -22,3 +22,23 @@ console.log(msg)
 console.log(msg);                                                        console.log(msg)
  * cambien para ver en el navegador por este tag <script src="./app.js" ></script>
  */
+
+/**----------------------------------leccón dos----------------------------------------- */
+
+//const a= 10; // si ponemos el cursor encima nos dice el const a: 10
+// ahora hagamos 
+
+//let b = 10; // nos dice let b: number esto es poque arriba tenememos una constante y por lo tanto no va a cambiar
+//en cambio let sí se  pude cambiar. Poe eso TS infiere que es del tipo number 
+
+//function sayHello (msg:string){// si le asignamos un tipo el error se va
+//  console.log(msg+' '+'gab')
+//}
+// Parameter 'msg' implicitly has an 'any' ese error es porque en nuestro tsconfig
+// tenemos habilitado esto "noImplicitAny": true,     ponelo en false si queres saca éste error 
+// lo recomndable es usarlo y hacer lo más estricto a ts para minimizar errores
+
+(()=>{
+    const a:number= 10;
+    console.log(a);
+})()

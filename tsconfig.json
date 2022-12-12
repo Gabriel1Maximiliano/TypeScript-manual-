@@ -1,22 +1,4 @@
-# La idea de este repo es que cualquiera que quiera aprender ts de forma más amigable pueda acceder a los distintos ejemplos que hay en las carpetas. Cada ejercicio tiene comentarios que ayudan a la comprensión de lo que se esta intentando explicar. Siempre por suspuesto pueden acceder a la documentación. Espero lo disfruten.. 
-
-Instalar de manera global typescript !!!
-
-# ts.config.ts 
-para poder crearlo en la ventana de comandos hacemos tsc --init
-aparece esto
-Created a new tsconfig.json with:                                                              
-                                                                                            TS 
-  target: es2016
-  module: commonjs
-  strict: true
-  esModuleInterop: true
-  skipLibCheck: true
-  forceConsistentCasingInFileNames: true
-
-  y nos crea lo siguiente 
-
-  {
+{
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -95,7 +77,7 @@ Created a new tsconfig.json with:
 
     /* Type Checking */
     "strict": true,                                      /* Enable all strict type-checking options. */
-    // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+     "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
     // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
     // "strictBindCallApply": true,                      /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
