@@ -1,5 +1,6 @@
 "use strict";
 /** Tupla : Conjunto de elementos de distinto tipo que se guardan de forma consecutiva en memoria.
+ * datos de la documentación que me gustaron
  * Tuples may be destructured like arrays; the destructuring variables get the types of the corresponding tuple elements:
 
 let tuple: [number, string, boolean] = [7, "hello", true];
