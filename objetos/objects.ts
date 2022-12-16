@@ -2,16 +2,19 @@
     // asignamos el tipo de dato que va a tener caca propiedad del objeto
     // aca noi importa el orden en que esten las propiedades lo recomndable es alfababéticamente
     // podemos poner una propiedad opcional con '?' age?:number
-    let flash :{ name:string,age?:number,power:string[]  }={
+    let flash :{ name:string,age?:number,power:string[], getName? :() => string  }={
         name:'ana',
-       // age:24,
-        power:['super']
+        age:24,
+        power:['super'],
+        getName(){
+                     return this.name;
+                 }
     }
     //  flash ={
     //     name:'ana',
     //     age:24,
     //     power:['super'],
-    //     getNombre(){
+    //     getName(){
     //         return this.name;
     //     }
     // }
